@@ -12,7 +12,8 @@ $color_orange_dark: #CB7731;
 $color_grey_light: #7F7F7F;
 $color_grey_lighter: #CDCDCD;
 
-$color_background_post_2: lighten($background_headers, 5%)
+$color_background_post_1: $background_headers;
+$color_background_post_2: lighten($background_headers, 5%);
 $color_font_post: $color_grey_lighter;
 $color_link_hover: $color_orange_dark;
 
@@ -650,7 +651,12 @@ Colours and backgrounds for buttons.css
 .icon-contact				{ background-image: url("./images/icon_pm.gif"); }
 .icon-delete-cookies		{ background-image: url("./images/icon_delete_cookies.gif"); }
 .icon-download				{ background-image: url("./images/icon_download.gif"); }
-.icon-faq					{ background-image: url("./images/icon_faq.gif"); }
+.icon-faq					{ position: relative }
+.icon-faq:before {
+	position:absolute;
+  font-family: FontAwesome;
+	content: '\f059';
+}
 .icon-home					{ background-image: url("./images/icon_home.gif"); }
 .icon-logout				{ background-image: url("./images/icon_logout.gif"); }
 .icon-mark					{ background-image: url("./images/icon_mark.gif"); }
