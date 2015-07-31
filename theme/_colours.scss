@@ -10,6 +10,7 @@ $background_headers: #3C3F41;
 $color_yellow_dark: #BB9354;
 $color_orange_dark: #CB7731;
 $color_grey_light: #7F7F7F;
+$color_grey_light: #CDCDCD;
 
 html, body {
 	color: $color_yellow_dark;
@@ -95,7 +96,7 @@ table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
 }
 
 .bg2 {
-	background-color: #e1ebf2;
+	background-color: $background_headers;
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
@@ -118,7 +119,7 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 ----------------------------------------*/
 
 ul.navlinks {
-	border-top-color: #FFFFFF;
+	border-top-color: #666666;
 }
 
 /* Table styles
@@ -330,7 +331,8 @@ ul.topiclist li {
 }
 
 ul.topiclist dd {
-	border-left-color: #FFFFFF;
+	border-style: dotted;
+	border-left-color: #777777;
 }
 
 .rtl ul.topiclist dd {
@@ -347,12 +349,11 @@ ul.topiclist li.row dt a.subforum.unread {
 }
 
 li.row {
-	border-top-color:  #FFFFFF;
-	border-bottom-color: #00608F;
+	border-top-color:  #777777;
 }
 
 li.row strong {
-	color: #000000;
+	color: $color_grey_lighter;
 }
 
 li.row:hover dd {
