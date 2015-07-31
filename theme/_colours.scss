@@ -651,13 +651,9 @@ Colours and backgrounds for buttons.css
 .icon-contact				{ background-image: url("./images/icon_pm.gif"); }
 .icon-delete-cookies		{ background-image: url("./images/icon_delete_cookies.gif"); }
 .icon-download				{ background-image: url("./images/icon_download.gif"); }
-.icon-faq					{ position: relative }
-.icon-faq:before {
-	position:absolute;
-	top:0;
-  left:-5px;
-  font-family: FontAwesome;
-	content: '\f059';
+.icon-faq					{
+	@extend .fa-li;
+	@extend .fa-question-circle;
 }
 .icon-home					{ background-image: url("./images/icon_home.gif"); }
 .icon-logout				{ background-image: url("./images/icon_logout.gif"); }
