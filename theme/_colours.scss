@@ -654,6 +654,8 @@ Colours and backgrounds for buttons.css
 .icon-faq					{ position: relative }
 .icon-faq:before {
 	position:absolute;
+	top:0;
+  left:-5px;
   font-family: FontAwesome;
 	content: '\f059';
 }
