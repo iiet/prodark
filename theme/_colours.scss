@@ -252,7 +252,7 @@ p.post-notice.reported:before, p.post-notice.error:before {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
+a { color: $color_orange_dark; }
 a:hover	{ color: #D31141; }
 
 /* Links on gradient backgrounds */
