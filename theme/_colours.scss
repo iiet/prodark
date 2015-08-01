@@ -739,7 +739,7 @@ Colours and backgrounds for buttons.css
   content: '\f002';
   margin:0 5px 0 -15px;
 }
-.responsive-search a:	{ background-image: url("./images/icon_search.gif"); }
+.responsive-search a	{ background-image: url("./images/icon_search.gif"); }
 .icon-search-active > a::before {
 	font-family: 'FontAwesome';
   content: '\f002';
