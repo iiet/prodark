@@ -12,7 +12,7 @@ $color_orange_dark: #CB7731;
 $color_grey_light: #7F7F7F;
 $color_grey_lighter: #CDCDCD;
 
-$color_background_post_1: $background_headers;
+$color_background_post_1: $background_main;
 $color_background_post_2: lighten($background_headers, 5%);
 $color_font_post: $color_grey_lighter;
 $color_link_hover: $color_orange_dark;
@@ -108,7 +108,7 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 }
 
 .bg3	{
-	background-color: #cadceb;
+	background-color: lighten($background_headers, 10%);
 }
 
 .ucprowbg {
@@ -651,8 +651,6 @@ Colours and backgrounds for buttons.css
 .icon-delete-cookies		{ background-image: url("./images/icon_delete_cookies.gif"); }
 .icon-download				{ background-image: url("./images/icon_download.gif"); }
 .icon-faq					{
-	@extend .fa-li;
-	@extend .fa-question-circle;
 }
 .icon-home					{ background-image: url("./images/icon_home.gif"); }
 .icon-logout				{ background-image: url("./images/icon_logout.gif"); }
@@ -772,13 +770,13 @@ ul.cplist {
 /* CP tabbed menu
 ----------------------------------------*/
 #tabs .tab > a {
-	background: #BACCD9;
-	color: #536482;
+	background: $background_headers;
+	color: $color_orange_dark;
 }
 
 #tabs .tab > a:hover {
-	background: #DDEDFB;
-	color: #D31141;
+	background: lighten($background_headers, 10%);
+	color: darken($color_orange_dark, 10%);
 }
 
 #tabs .activetab > a,
