@@ -75,8 +75,7 @@ hr {
 }
 
 .forumbg {
-	background-color: #12A3EB;
-	background-image: url("./images/bg_header.gif");
+	background-color: $background_headers;
 }
 
 .panel {
@@ -93,7 +92,7 @@ hr {
 }
 
 .bg1 {
-	background-color: #ECF3F7;
+	background-color: $color_background_post_1;
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
@@ -101,7 +100,7 @@ table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
 }
 
 .bg2 {
-	background-color: $background_headers;
+	background-color: $color_background_post_2;
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
