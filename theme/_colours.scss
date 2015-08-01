@@ -13,7 +13,7 @@ $color_grey_light: #7F7F7F;
 $color_grey_lighter: #CDCDCD;
 
 $color_background_post_1: $background_main;
-$color_background_post_2: lighten($background_main, 2%);
+$color_background_post_2: $background_main;
 $color_font_post: $color_grey_lighter;
 $color_link_hover: $color_orange_dark;
 
@@ -177,14 +177,14 @@ dl.details dd {
 ---------------------------------------- */
 
 .pagination li a {
-	background-color: #ECEDEE;
-	border-color: #B4BAC0;
+	background-color: $background_headers;
+	border-color: $background_wrapper;
 	color: $color_orange_dark;
 }
 
 .pagination li.ellipsis span {
 	background-color: transparent;
-	color:	#000000;
+	color: $color_grey_lighter;
 }
 
 .pagination li.active span {
@@ -194,9 +194,8 @@ dl.details dd {
 }
 
 .pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	background-color: #368AD2;
-	border-color: #368AD2;
-	color: #FFFFFF;
+	background-color: lighten($background_headers, 2%);
+	border-color: lighten($background_wrapper, 2%);
 }
 
 .pagination li.next a, .pagination li.previous a, .pagination li.page-jump a {
@@ -946,7 +945,7 @@ select {
 }
 
 label {
-	color: #425067;
+	color: $color_grey_lighter;
 }
 
 option.disabled-option {
